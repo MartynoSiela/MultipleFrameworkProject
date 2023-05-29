@@ -11,6 +11,9 @@ namespace TestsPw
         {
             Driver.SetupDriver();
             Google.Open();
+            Google.RejectCookies();
+            Google.Search("Hello World");
+            Google.ClickImFeelingLucky();
             Driver.QuitDriver();
         }
     }
